@@ -1,0 +1,15 @@
+<scroll-view class='issue'>
+  <block wx:for="{{arrdata}}" wx:key="">
+    <view class="issue_list" bindtap="open_that" data-index="{{index}}">
+      <view class="title">
+      <text>{{item.name}}</text>
+      <text  hidden="{{item.isTrue==true}}"  class='arrow_right'></text>
+      <text hidden="{{item.isTrue==false}}"  class='arrow_bottom'></text>
+      </view> 
+
+    </view>
+    <view class="issue_detail" hidden="{{!item.isTrue}}">
+      <text>{{item.content}}</text>
+    </view>
+  </block>
+</scroll-view>

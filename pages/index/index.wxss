@@ -1,0 +1,45 @@
+/* pages/person/issue/issue.wxss */
+/* 箭头 */
+.arrow_right{
+  width: 20rpx;
+  height: 20rpx;
+  border-top: 2rpx solid #999;
+  border-right: 2rpx solid #999;
+  position: absolute;
+  right: 40rpx;
+  transform: rotate(45deg); 
+  top: 50%;
+  margin-top: -10rpx;
+}
+.arrow_bottom{
+  width: 20rpx;
+  height: 20rpx;
+  border-top: 2rpx solid #999;
+  border-right: 2rpx solid #999;
+  position: absolute;
+  right: 40rpx;
+  transform: rotate(135deg); 
+  top: 50%;
+  margin-top: -10rpx;
+}
+
+.issue_list{
+  position: relative;
+  border-bottom: 1rpx solid #EEEEEE;
+}
+.issue_list:nth-last-child(1){
+  border-bottom: none;
+}
+.title{
+  line-height: 84rpx;
+  background: #fff;
+  padding: 0 0 0 20rpx;
+}
+.issue_detail{
+   padding: 20rpx 40rpx 20rpx 20rpx;
+   background: #F5F5F5;
+   line-height: 45rpx;
+   color: #666;
+   font-size: 28rpx;
+   text-align: justify;
+}
